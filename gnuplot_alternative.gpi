@@ -1,0 +1,11 @@
+set datafile separator ';'
+set grid xtics, ytics
+set terminal jpeg
+
+# XZ
+set title "SRW-1, field XZ"
+set xlabel "X"
+set ylabel "Z"
+datafile = "DUMP_graphic_field_xz.txt"
+set output "SRW-1_field_xz.jpg"
+plot datafile

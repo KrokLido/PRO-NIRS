@@ -1,0 +1,36 @@
+# Общие настройки.
+set datafile separator ';'
+set grid xtics, ytics
+
+
+# XY
+set title "SRW-1, field XY"
+set xlabel "X"
+set ylabel "Y"
+datafile = "DUMP_graphic_field_xy.txt"
+set terminal jpeg size 950, 950
+set output "SRW-1_field_xy.jpg"
+plot datafile
+
+#set term push
+
+
+# XZ
+set title "SRW-1, field XZ"
+set xlabel "X"
+set ylabel "Z"
+datafile = "DUMP_graphic_field_xz.txt"
+set output "SRW-1_field_xz.jpg"
+plot datafile
+
+
+
+
+
+# YZ
+set title "SRW-1, field YZ"
+set xlabel "Y"
+set ylabel "Z"
+datafile = "DUMP_graphic_field_yz.txt"
+set output "SRW-1_field_yz.jpg"
+plot datafile

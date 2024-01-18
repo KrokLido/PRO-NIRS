@@ -1,0 +1,17 @@
+set title "Gnuplot for SRW-1"
+set datafile separator ';'
+set grid xtics ytics
+
+set xlabel "Z"
+set ylabel "X"
+set zlabel "Y"
+
+datafile = "DUMP_graphic_xyz.txt"
+
+set terminal jpeg size 1900, 1900
+set output "SRW-1_xyz.jpg"
+
+
+splot datafile lw 3
+
+## end of code

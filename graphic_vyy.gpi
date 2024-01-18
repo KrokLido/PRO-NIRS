@@ -1,0 +1,16 @@
+set title "SRW-1, Vyy"
+set grid xtics, ytics
+
+set xlabel "t"
+set ylabel "Vyy"
+
+datafile = "DUMP_graphic_vyy.txt"
+
+
+#set terminal push
+set terminal jpeg size 1900, 1900
+set output "SRW-1_Vr_yy.jpg"
+
+plot datafile with lines title "V_yy"
+
+## end of code

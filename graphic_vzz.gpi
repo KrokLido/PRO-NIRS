@@ -1,0 +1,15 @@
+set title "SRW-1, Vzz"
+set grid xtics, ytics
+
+set xlabel "t"
+set ylabel "Vzz"
+
+datafile = "DUMP_graphic_vzz.txt"
+
+#set terminal push
+set terminal jpeg size 1900, 1900
+set output "SRW-1_Vr_zz.jpg"
+
+plot datafile with lines title "V_zz"
+
+## end of code

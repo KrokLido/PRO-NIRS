@@ -1,0 +1,13 @@
+set title "SRW-1, V"
+set grid xtics, ytics
+
+set ylabel "t"
+set xlabel "Vx, Vy, Vz"
+
+plot "graphic_vx.txt" with lines title "V_x", "graphic_vy.txt" with lines title "V_y", "graphic_vz.txt" with lines title "V_z"
+
+set terminal push
+set terminal pngcairo size 1900, 1900
+set output "SRW-1_Vr.png"
+replot
+## end of code

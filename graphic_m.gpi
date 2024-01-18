@@ -1,0 +1,15 @@
+set title "SRW-1, m=f(t)"
+set datafile separator ';'
+set grid xtics, ytics
+
+set xlabel "t"
+set ylabel "m"
+
+datafile = "DUMP_graphic_m.txt"
+
+set terminal jpeg size 1900, 1900
+set output "SRW-1_m.jpg"
+
+plot datafile
+
+#set term push

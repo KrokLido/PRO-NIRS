@@ -1,0 +1,16 @@
+set title "SRW-1, Vsum"
+set grid xtics, ytics
+
+set xlabel "t"
+set ylabel "Vsum"
+
+datafile = "DUMP_graphic_vsum.txt"
+
+#set terminal push
+set terminal jpeg size 1900, 1900
+set output "SRW-1_Vr_sum.jpg"
+
+plot datafile with lines title "V_sum"
+#plot datafile title "V_sum"
+
+## end of code
